@@ -56,55 +56,55 @@
             -->
             <form action="/make_prediction" method="post">
               <label for="input-1">Minutes Remaining in Game</label>
-              <input type="text" id="input-1" name="game_minutes_remaining" value="">
+              <input type="text" id="input-1" name="game_minutes_remaining" value="60">
               <br>
               <label for="input-2">Minutes Remaining in Half</label>
-              <input type="text" id="input-2" name="half_minutes_remaining" value="">
+              <input type="text" id="input-2" name="half_minutes_remaining" value="30">
               <br>
               <label for="input-3">Minutes Remaining in Quarter</label>
-              <input type="text" id="input-3" name="quarter_minutes_remaining" value="">
+              <input type="text" id="input-3" name="quarter_minutes_remaining" value="15">
               <br>
               <label for="input-4">Quarter</label>
-              <input type="text" id="input-4" name="qtr" value="">
+              <input type="text" id="input-4" name="qtr" value="1">
               <br>
               <label for="input-5">Down</label>
-              <input type="text" id="input-5" name="down" value="">
+              <input type="text" id="input-5" name="down" value="1">
               <br>
-              <label for="input-6">Drive</label>
-              <input type="text" id="input-6" name="drive" value="">
+              <label for="input-6">Drive Number</label>
+              <input type="text" id="input-6" name="drive" value="1">
               <br>
               <label for="input-7">Offensive Team Score</label>
-              <input type="text" id="input-7" name="posteam_score" value="">
+              <input type="text" id="input-7" name="posteam_score" value="10">
               <br>
               <label for="input-8">Defensive Team Score</label>
-              <input type="text" id="input-8" name="defteam_score" value="">
+              <input type="text" id="input-8" name="defteam_score" value="7">
               <br>
               <label for="input-9">Score Differential</label>
-              <input type="text" id="input-9" name="score_differential" value="">
+              <input type="text" id="input-9" name="score_differential" value="3">
               <br>
               <label for="input-10">Yard Line (Out of 100)</label>
-              <input type="text" id="input-10" name="yardline_100" value="">
+              <input type="text" id="input-10" name="yardline_100" value="75">
               <br>
               <label for="input-11">Goal Down Situation? (No = 0, Yes = 1)</label>
-              <input type="text" id="input-11" name="goal_to_go" value="">
+              <input type="text" id="input-11" name="goal_to_go" value="0">
               <br>
-              <label for="input-12">Yards to 1st down? If goal down situation, yards to endzone?</label>
-              <input type="text" id="input-12" name="ydstogo" value="">
+              <label for="input-12">Yards to 1st Down? If Goal Down Situation, Yards To Endzone?</label>
+              <input type="text" id="input-12" name="ydstogo" value="5">
               <br>
               <label for="input-13">Remaining Offensive Team Timeouts</label>
-              <input type="text" id="input-13" name="posteam_timeouts_remaining" value="">
+              <input type="text" id="input-13" name="posteam_timeouts_remaining" value="3">
               <br>
               <label for="input-14">Remaining Defensive Team Timeouts</label>
-              <input type="text" id="input-14" name="defteam_timeouts_remaining" value="">
+              <input type="text" id="input-14" name="defteam_timeouts_remaining" value="1">
               <br>
               <label for="input-15">Shotgun Formation? (No = 0, Yes = 1)</label>
-              <input type="text" id="input-15" name="shotgun" value="">
+              <input type="text" id="input-15" name="shotgun" value="1">
               <br>
               <label for="input-16">No Huddle? (No = 0, Yes = 1)</label>
-              <input type="text" id="input-16" name="no_huddle" value="">
+              <input type="text" id="input-16" name="no_huddle" value="0">
               <br>
               <label for="input-17">Win Probability (Use Decimal) (https://live.numberfire.com/nfl)</label>
-              <input type="text" id="input-17" name="wp" value="">
+              <input type="text" id="input-17" name="wp" value=".20">
               <!--
                 Note on "select" (drop-down): the value is what is sent as the
                 value in the params dictionary, the text between the tags is
@@ -145,6 +145,9 @@
           an ExtraTrees Classification Model that has shown an 80% recall score when it comes to predicting whether
           a play will be run or pass. Good Luck!
         </p>
+
+        <a href="https://github.com/JJHick95/NFL-Play-Predictor">View on GitHub</a>
+        <a href="https://www.linkedin.com/in/jon-hickey/">My LinkedIn</a>
       </div>
     </div>
   </body>
